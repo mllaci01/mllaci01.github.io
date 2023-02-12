@@ -15,5 +15,5 @@
     
     mail($to, $email_subject, $email_body, $headers);
 
-    header("location: index.html");
+    header("location: succes.html");
 ?>
