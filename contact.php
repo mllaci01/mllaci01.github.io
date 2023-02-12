@@ -6,7 +6,7 @@
         $message = $_POST['message'];
 
         $mailTo = "connect@webmiller.hu";
-        $headers = "From:".$mailForm;
+        $headers = "From:".$email;
         $txt = "Üzenet tőle ".$name.$message;
 
         mail($mailTo, $name, $txt, $headers);
