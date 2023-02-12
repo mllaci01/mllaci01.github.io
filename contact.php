@@ -2,11 +2,11 @@
 
     if (isset($_POST['submit'])) {
         $name = $_POST['name'];
-        $email = $_POST['mail'];
+        $mailForm = $_POST['mail'];
         $message = $_POST['message'];
 
         $mailTo = "connect@webmiller.hu";
-        $headers = "From:".$email;
+        $headers = "From:".$mailForm;
         $txt = "Üzenet tőle ".$name.$message;
 
         mail($mailTo, $name, $txt, $headers);
