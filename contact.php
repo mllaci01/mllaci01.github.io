@@ -1,19 +1,20 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
 
-    $email_from = 'MolnárWeb oldal';
-    $email_subject = 'Új üzenet a MolnárWeb oldalről';
-    $email_body = "Name: $name.\n".
-                  "Email: $email.\n". 
-                  "Message: $message.\n";
-                  
-    $to ="itmolnarweb@gmail.com";
-    $headers ="From: $email_from \r\n";
-    $headers .="Reply-to: $email \r\n";
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $mailForm = $_POST['mail'];
+        $message = $_POST['message'];
+
+        $mailTo = "itmolnarweb@gmail.com";
+        $headers = "From:".$mailForm;
+        $txt = "Üzenet tőle ".$name.$message;
+
+        mail($mailTo, $name, $txt, $headers);
+
+        header("location: succes.html");
+    }
+
     
-    mail($to, $email_subject, $email_body, $headers);
 
-    header("location: succes.html");
+ 
 ?>
