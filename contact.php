@@ -13,7 +13,7 @@
     $headers ="From: $email_from \r\n";
     $headers .="Reply-to: $email \r\n";
     
-    mail($to, $email-subject, $email_body, $headers);
+    mail($to, $email_subject, $email_body, $headers);
 
     header("location: index.html");
 ?>
