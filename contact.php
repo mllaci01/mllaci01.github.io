@@ -5,7 +5,7 @@
         $mailForm = $_POST['mail'];
         $message = $_POST['message'];
 
-        $mailTo = "itmolnarweb@gmail.com";
+        $mailTo = "connect@webmiller.hu";
         $headers = "From:".$mailForm;
         $txt = "Üzenet tőle ".$name.$message;
 
