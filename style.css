@@ -286,7 +286,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
   background-color: #00aced;
 }
 
-
+.btn-outline-white:hover {
+  background-color:  #000;
+  color: #d5d5d5;
+}
 
 
 
