@@ -1,6 +1,6 @@
 let cookieModal = document.querySelector(".cookie-consent-modal")
-let cancelCookieBtn = document.querySelector(".btng.cancel")
-let acceptCookieBtn = document.querySelector(".btng.accept")
+let cancelCookieBtn = document.querySelector(".btn.btn-secondary")
+let acceptCookieBtn = document.querySelector(".btn.btn-primary")
 
 cancelCookieBtn.addEventListener('click', function(){
     cookieModal.classList.remove("active")

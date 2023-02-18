@@ -271,20 +271,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .btns {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2em;
+  margin-top: 1em;
 }
-.btng {
+/*.btng {
   border: none;
   outline: none;
-  padding: .8em 1.5em;
+  padding: .10em 1.5em;
   width: 100px;
-  margin-right: 1em;
+  margin-right: 0.5em;
   border-radius: 3px;
   text-transform: uppercase;
 }
 .btng.accept {
   background-color: #00aced;
-}
+}*/
 
 .btn-outline-white:hover {
   background-color:  #000;
